@@ -1,0 +1,23 @@
+Questão 2:
+
+a) stub:  O stub  atua como uma representação local  para o cliente ou proxy, para um objeto remoto. Dada a sua função no RMI um paralelo pode ser feito entre 
+
+b) skeleton:  O skeleton é responsável por mandar a call para a implementação real do objeto remoto.
+
+c) registro: O registro mapeia os serviços disponíveis.
+
+d) serialização (marshalling e unmarshalling): A conversão que é feita nos dados que transitam entre cliente e servidor.
+
+e) invocação remota de métodos: o processo de acessar métodos disponíveis em uma jvm diferente.
+
+Analisando a relação entre o framework de componentes e o java RMI pode-se realizar alguns paralelos.
+
+Os stubs representariam componentes, por possuírem tipos e funcionalidades especificas.
+
+Os skeleton por ser responsável pela comunicação do cliente com o servidor, seria uma representação de um serviço do framework.
+
+O registro que possui função de mapear o serviços disponíveis faria o papel de serviço de distribuição, ligando os componentes a seus serviços.
+
+A serialização por ser um padrão de transmissão de dados seria um padrão imposto pelo modelo de componentes, uma regra de comportamento.
+
+A invocação remota de um metodo seria o equivalente ao acionamento de um componente, passando pelas etapas de identificação e acionamento dos elementos anteriormente descritos.

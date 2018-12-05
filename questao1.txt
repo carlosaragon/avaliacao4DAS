@@ -1,0 +1,16 @@
+Modelo de componente:
+Definição:  representa  um  elemento  da  arquitetura  do  sistema na qual são definidos os padrões e convenções impostas aos componentes do sistema.  Com  isso  busca-se  expressar restrições de projeto arquitetural ou global.  No modelo DBC tem como papel descrever  a  função  de  cada componente um  e  como  eles  interagem  entre  si.
+
+Framework de componentes:
+Definição:  a  implementação  de  serviços  que  dão  suporte ou reforçam o modelo de componentes. No modelo DBC a função do framework é gerenciar os recursos compartilhados  pelos  componentes  e  prover  um  mecanismo  de  interação  entre  eles. 
+
+Componentes:
+Definição: componentes  de  software  reusáveis  são  artefatos  auto contidos,  facilmente  identificáveis  que  descrevem  e/ou  executam  funções  especificas e têm interfaces claras, documentação apropriada e uma condição de reuso definida. No DBC os componentes são considerados apenas artefatos da fase de implementação.
+
+    - Tipo de componente: Definidos em termos das interfaces que implementam, onde cada interface   em   um   componente   corresponde   a   um   tipo.   Caso   um   componenteimplemente  as  interfaces  A  e  B,  então  ele  é  do  tipo  A  e  B,  o  que  lhe  garante  uma capacidade polimórfica em relação a estes tipos. Isto permite que estes diferentes tipos de componentes desempenhem diferentes papéis no sistema, bem como participem de
+    diferentes formas de interação. 
+
+    - Forma de interação: Definição  da  forma  de  interação  entre  componentes  e  entre  componentes  e  o  framework  de  componentes,  através  da  especificação  de  como  os  componentes  são  localizados,  o  protocolo  de  comunicação  usado  e  como  a  qualidade dos  serviços  é  alcançada.  A  classe  de  interação  entre  componentes  compreende restrições quanto aos tipos de componentes que podem ser clientes de outros tipos, o número  de  possíveis  clientes  simultâneos  e  outras  restrições  topológicas.  A  classe  de interação    entre    componentes    e    frameworks    inclui    definições    relacionadas    a gerenciamento  de  
+    recursos,  como  o  ciclo  de  vida  de  um  componente  (ativação,  desativação), formas de gerência, persistência e assim por diante. As formas de interação podem dizer respeito a todos os tipos de componentes ou apenas a tipos particulares. 
+
+    - Recursos necessários:  A  composição  dos  componentes  é  realizada  pela  ligação  dos  componentes a um ou mais recursos, onde um recurso pode ser tanto provido por um framework de  componentes  como  por  algum  componente  utilizado  no framework. O modelo de componentes descreve quais recursos estão disponíveis a cada componente e como e quando eles são associados a estes recursos. Em contrapartida, o framework vê os componentes como recursos a serem gerenciados.  
